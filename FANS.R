@@ -10,7 +10,7 @@ FANS = function(A, X, lambda){
     A_sq = A%*%A
     for(i in 1:(n-1)){
       for(j in (i+1):n){
-        d0[i,j] = max( abs(A_sq[i,]-A_sq[j,])[-c(i,j)] +runif(1)/n )/n  #######
+        d0[i,j] = max( abs(A_sq[i,]-A_sq[j,])[-c(i,j)] +runif(1)/n )/n
         d0[j,i] = d0[i,j]
       }
     }
@@ -24,7 +24,7 @@ FANS = function(A, X, lambda){
     X_sq = X%*%t(X)
     for(i in 1:(n-1)){
       for(j in (i+1):n){
-        s[i,j] = max( abs(X_sq[i,]-X_sq[j,])[-c(i,j)] +runif(1)/n )/ncol(X)  #######
+        s[i,j] = max( abs(X_sq[i,]-X_sq[j,])[-c(i,j)] +runif(1)/n )/ncol(X)
         s[j,i] = s[i,j]
       }
     }
@@ -39,7 +39,7 @@ FANS = function(A, X, lambda){
   NB = matrix(NA,n,n)
   h = sqrt(log(n)/n)
   for(i in 1:n){
-    NB[i,] = as.numeric(d[i,]<=quantile(d[i,-i],h))  ############## < ###############
+    NB[i,] = as.numeric(d[i,]<=quantile(d[i,-i],h))
     if(sum(NB[i,])>1){NB[i,i]=0 }
   }
   #which(NB[1,]!=0) # Neighbor of node i

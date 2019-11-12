@@ -65,7 +65,7 @@ for(run in 1:maxRun){
   A_sq = A%*%A
   for(i in 1:(n-1)){
     for(j in (i+1):n){
-      d0[i,j] = max( abs(A_sq[i,]-A_sq[j,])[-c(i,j)] +runif(1)/n )/n  #######################
+      d0[i,j] = max( abs(A_sq[i,]-A_sq[j,])[-c(i,j)] +runif(1)/n )/n
       d0[j,i] = d0[i,j]
     }
   }
