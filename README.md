@@ -14,9 +14,9 @@
 
 ### Plots in the paper
 #### visualize_graphon.R
-  Figure 1, 2(top), 3, 10, 11
+  Figure 1, 2 (top), 3, 10, 11
 #### MSE_vs_lambda.R
-  Figure 2(bottom), 4
+  Figure 2 (bottom), 4
 #### repeatCompare.m (in "Matlab Code" folder)
   Figure 5
 #### realdata_results.R and "Matlab Code":
