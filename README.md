@@ -1,4 +1,4 @@
-### Feature-Assisted-Neighborhood-Smoothing
+## Feature-Assisted-Neighborhood-Smoothing
 #### FANS.R
   Input
   A: adjacency matrix
@@ -12,7 +12,7 @@
   
 #### Other related algorithms are in "Matlab Code" folder
 
-### Plots in the paper
+## Plots in the paper
 #### visualize_graphon.R
   Figure 1, 2 (top), 3, 10, 11
 #### MSE_vs_lambda.R
