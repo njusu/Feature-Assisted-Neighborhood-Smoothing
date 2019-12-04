@@ -4,7 +4,7 @@
   A: adjacency matrix;
   X: feature matrix;
   lambda: tuning parameter;
-  screen: controls if feature screening is performed.
+  screen (boolean): controls if feature screening is performed.
   Output:
   P_hat: estimated graphon values or probability matrix.
 #### CV_for_FANS.R
