@@ -1,14 +1,15 @@
 ## Feature-Assisted-Neighborhood-Smoothing
 #### FANS.R
-  Input
-  A: adjacency matrix
-  X: feature matrix
-  lambda: tuning parameter
+  Input --
+  A: adjacency matrix;
+  X: feature matrix;
+  lambda: tuning parameter;
+  screen: controls if feature screening is performed.
   Output:
-  P_hat: estimated graphon values or probability matrix
+  P_hat: estimated graphon values or probability matrix.
 #### CV_for_FANS.R
-  Takes a list of lambda values (LAMBDA) as input
-  Outputs the CV error for each lambda
+  Takes a list of lambda values (LAMBDA) as input.
+  Outputs the CV error for each lambda.
   
 #### Other related algorithms are in "Matlab Code" folder
 
