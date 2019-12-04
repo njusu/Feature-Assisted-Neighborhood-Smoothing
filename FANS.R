@@ -42,7 +42,7 @@ FANS = function(A, X, lambda, screen=FALSE){
   d0 = get_d0(A)
   s = get_s(as.matrix(X))
   
-  if(screen=TRUE){
+  if(screen==TRUE){
     feature_cor = rep(NA, ncol(X))
     for(i in 1:ncol(X)){
       X_temp = as.matrix(X[,i])
